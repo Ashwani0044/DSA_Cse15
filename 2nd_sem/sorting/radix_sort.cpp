@@ -45,3 +45,10 @@ int main() {
 
 
 }
+
+// first find the maximum digit in the array to get the number of times we have to iterate (= no. of digit in maximum number)
+// make a count array (0-9) and a array B
+// then count the frequency of the digit in the array by count[(A[i]/p)%10]++
+// then make it a prefix sum array (the count array)
+// then traverse from n-1 to 0 -> B[count[(A[i]/p)%10]-1] = A[i] and count[(A[i]/p)%10]--
+// then assign B to A

@@ -5,7 +5,7 @@ struct Node{
     int val;
     Node* next;
 
-    Node(int v){//constructor to initialize
+    Node(int v){ // constructor to initialize
         val=v;
         next= NULL;
     }
@@ -31,13 +31,14 @@ void insertAtTail(Node* &head, int val){
     temp->next=n;
 }
 bool search(Node* &head,int key){
-     Node* temp = head;
+    Node* temp = head;
     while (temp != nullptr) {
         if (temp->val == key) return true; // Found
         temp = temp->next;
     }
     return false; // Not found
 }
+
 void deleteNode(Node* &head, int v){
     //check on head 
     if(head->val == v){
@@ -65,7 +66,7 @@ void insertAtPosition(Node* &head,int pos, int v){
     for(int i=0;i<pos-1 && temp!=nullptr;i++){
         temp=temp->next;
     }
-    if(temp==NULL){ cout<<"out of range\n"; return;}
+    if(temp==NULL){ cout<<"out of range\n"; return; }
     n->next= temp->next;
     temp->next= n;
 }

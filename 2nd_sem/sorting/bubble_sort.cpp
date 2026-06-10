@@ -22,7 +22,3 @@ int main(){
     }
     return 0;
 }
-
-//dry run with an example:
-// input: 5
-// array elements: 64 34 25 12 22
