@@ -24,7 +24,7 @@ int main(){
             break;
         }
         else if(arr[mid] < key){
-            left = mid + 1; // Search in the right half
+            left = mid + 1; // Search in the right half  
         }
         else{
             right = mid - 1; // Search in the left half
